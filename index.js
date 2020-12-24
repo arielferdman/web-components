@@ -1,5 +1,8 @@
 import "./form-sound-icon.js";
 
 window.addEventListener("load", () => {
-  console.log("hi");
+  let container = document.querySelector(".container");
+  let formSoundIcon = document.createElement("form-sound-icon");
+  formSoundIcon.style.justifySelf = "center";
+  container.appendChild(formSoundIcon);
 });

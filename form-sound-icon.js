@@ -2,10 +2,7 @@ class FormSoundIcon extends HTMLElement {
   constructor() {
     super();
     this.root = this.attachShadow({ mode: "open" });
-    this.template = `<link
-  rel="stylesheet"
-  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-/>
+    this.template = `
   <style>
     @import url(https://fonts.googleapis.com/css?family=Raleway:400, 700);
 
@@ -132,6 +129,25 @@ class FormSoundIcon extends HTMLElement {
     a:hover {
       cursor: pointer;
     }
+
+    a {
+      background-color: #fff;
+      border: 0;
+      outline: 0;
+      padding: 1.5rem 2rem;
+      font-size: 4rem;
+      font-family: monospace;
+      box-shadow: 0px 15px 25px -5px #0057ab;
+      transition: all 0.001s;
+      cursor: pointer;
+      border-radius: 5px;
+      border-bottom: 4px solid #d9d9d9;
+    }
+    a:active {
+      box-shadow: 0px 4px 8px #0065c8;
+      transform: scale(0.92);
+    }
+
   </style>
   <div class="card-form">
     <form class="signup">
