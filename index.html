@@ -108,5 +108,21 @@
       </div>
     </form>
   </div>
-  <script></script>
+  <script>
+    class FormSoundIcon extends HTMLElement {
+      constructor() {
+        super();
+        this.attachShadow({ mode: "open" });
+      }
+
+      connectedCallback() {
+        const template = document.querySelector("template");
+        this.shadowRoot.appendChild(template.content.cloneNode(true));
+      }
+    }
+
+    customElements.define("form-sound-icon", FormSoundIcon);
+  </script>
 </template>
+
+<form-sound-icon></form-sound-icon>
