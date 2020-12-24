@@ -137,7 +137,7 @@ class FormSoundIcon extends HTMLElement {
       padding: 1.5rem 2rem;
       font-size: 4rem;
       font-family: monospace;
-      box-shadow: 0px 15px 25px -5px #000000;
+      box-shadow: 0px 13px 20px -5px #000000;
       transition: all 0.001s;
       cursor: pointer;
       border-radius: 5px;
